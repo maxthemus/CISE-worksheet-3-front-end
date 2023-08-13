@@ -11,7 +11,7 @@ function ShowBookDetails(props) {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:8082/api/books/${id}`)
+      .get(`https://cise-worksheet-3-git-main-maxthemus.vercel.app/api/books/${id}`)
       .then((res) => {
         setBook(res.data);
       })
@@ -22,7 +22,7 @@ function ShowBookDetails(props) {
 
   const onDeleteClick = (id) => {
     axios
-      .delete(`http://localhost:8082/api/books/${id}`)
+      .delete(`https://cise-worksheet-3-git-main-maxthemus.vercel.app/api/books/${id}`)
       .then((res) => {
         navigate('/');
       })
